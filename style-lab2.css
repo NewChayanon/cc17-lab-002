@@ -1,0 +1,35 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+body{height: 100vh;}
+body,div *:not([class=container]){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    border: 1px solid silver;
+    border-radius: 5px;
+    width: 200px;
+    height: 260px;
+    flex-direction: column;
+    position: relative;
+}
+.noti{
+    color: white;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    top: -15px;
+    right: -15px;
+}
+img{width: 100%;}
+hr{
+    position: relative;
+    /* top: -4px; */
+}
+.name{
+    flex-grow: 1;
+    font-size: 25px;
+}
